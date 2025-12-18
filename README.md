@@ -20,6 +20,8 @@ Investigation of a reported suspicious email targeting corporate credentials. Th
 * **Payload De-obfuscation:** Identified Base64 encoding within the email body. Decoded the content to reveal the hidden HTML structure.
 * **IOC Extraction:** Located the malicious "Call to Action" button in the HTML code and extracted the obfuscated URL used for credential harvesting (typosquatting domain).
 
+![Phishing Analysis Evidence](images/phishing_proof.jpg)
+
 ---
 
 ## Project 2: Network Forensics
@@ -36,6 +38,8 @@ Forensic analysis of a packet capture (.pcap) file following a web server compro
 * **Tool Identification:** Analyzed HTTP User-Agent strings to identify specific vulnerability scanning tools used by the attacker (e.g., Gobuster).
 * **Attack Reconstruction:** Followed TCP streams to observe the upload of a malicious web shell. Decoded the HTTP requests to identify the commands executed by the attacker on the server (Command Injection).
 
+![Network Analysis Evidence](images/network_proof.jpg)
+
 ---
 
 ## Project 3: Endpoint Forensics
@@ -51,3 +55,5 @@ Investigation of an endpoint experiencing severe performance degradation. The hy
 * **Artifact Correlation:** Correlated timestamped browsing history with the installation time of browser extensions.
 * **Threat Identification:** Identified a specific malicious extension associated with a known cryptomining domain.
 * **Signature Verification:** Calculated the extension's unique identifier and hash to confirm its malicious nature against threat intelligence sources.
+
+![Browser Forensics Evidence](images/browser_proof.jpg)
